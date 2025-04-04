@@ -35,7 +35,6 @@ function clickSearch(event) {
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
-    per_page: 200,
   });
 
   const query = `https://pixabay.com/api/?${searchParam}`;

@@ -46,5 +46,5 @@ export function showLoader() {
 }
 
 export function hideLoader() {
-  //loader.classList.add('hidden');
+  loader.classList.add('hidden');
 }
