@@ -1,6 +1,5 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import axios from 'axios';
 
 //для виконання HTTP-запитів
 import getImagesByQuery from './js/pixabay-api';
@@ -46,6 +45,8 @@ function clickSearch(event) {
   clearGallery();
   inputForm.value = '';
   const data = getImagesByQuery(query);
+
+  console.log(data);
 
   data.then(value => {
     if (value.total === 0) {
